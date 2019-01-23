@@ -1,0 +1,95 @@
+*{
+	font-family: 'Oswald', sans-serif;
+}
+body{
+	margin: 0;
+	padding: 0;
+	
+}
+.page{
+	
+	background: linear-gradient(135deg, rgb(69,72,77) 0%,rgb(76,6,0) 99%);
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.col{
+	flex: 1;
+	height: 100vh;
+	position: relative;
+}
+.ctdown{
+	background: url(ac.jpg);
+	/*background: linear-gradient(135deg, rgb(125,126,125) 0%,rgb(68,0,0) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
+	clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+	background-size: cover;
+	background-position: center;
+	transition: all 1500ms;
+}
+.ctdown p{
+	visibility: hidden;
+}
+.ctdown:hover{
+transform: scale(0.96);
+	visibility: visible;
+}
+#d{
+	font-size: 50px;
+}
+
+.time{
+	color: #fff;
+	text-transform: uppercase;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+}
+.middle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	text-align: center;
+	
+}
+.time span{
+	padding: 0 14px;
+	font-size: 10px;
+}
+.time span div{
+	font-size: 40px;
+}
+.news{
+	width: 90%;
+}
+.news h2{
+	font-size: 40px;
+}
+.news h4{
+	font-size: 17px;
+	font-style: italic;
+}
+.news input{
+	display: block;
+	margin: 12px auto;
+	width: 100%;
+	max-width: 400px;
+	box-sizing: border-box;
+	padding: 14px 20px;
+	border-radius: 30px;
+	border: 1px solid #ddd;
+}
+.news-btn{
+	background: white;
+	cursor: pointer;
+	transition: all 1000ms;
+}
+.news-btn:hover{
+	background: #7f8c8d;
+	color: white;
+}
+@media screen and (max-width:608px){
+	.col{
+		flex: 100%;
+	}
+}
